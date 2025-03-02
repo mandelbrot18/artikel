@@ -1,10 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cuicgy5x4slre"]
+[gd_scene load_steps=3 format=3 uid="uid://cuicgy5x4slre"]
 
 [ext_resource type="FontFile" uid="uid://cabgsw3vwr2tl" path="res://assets/fonts/ELEGANT TYPEWRITER Regular.ttf" id="1_cx0jj"]
+[ext_resource type="Script" path="res://src/textbox.gd" id="1_pmgiw"]
 
 [node name="Textbox" type="CanvasLayer"]
+script = ExtResource("1_pmgiw")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="TextboxContainer" type="MarginContainer" parent="."]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -17,19 +19,20 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Panel" type="Panel" parent="MarginContainer"]
+[node name="Background" type="Panel" parent="TextboxContainer"]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+[node name="LabelContainer" type="MarginContainer" parent="TextboxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Label" type="Label" parent="MarginContainer/MarginContainer"]
+[node name="Label" type="Label" parent="TextboxContainer/LabelContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_cx0jj")
 theme_override_font_sizes/font_size = 30
 text = "es sitzt ein vogel auf dem leim er flattert sehr doch kommt nicht heim ein schwarzer kater kommt herrzu die krallen scharf die augen gluh am baum hinauf und immer höher kommt er dem armen vogel näher. der vogel spricht weil das so ist und weil mich doch der kater frisst so will ich keine zeit verlieren will noch ein wenig quinquillieren und lustig pfeifen wie zuvor der vogel scheint mir hat humor"
 autowrap_mode = 2
+visible_ratio = -0.00250627
