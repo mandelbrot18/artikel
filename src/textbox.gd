@@ -42,20 +42,16 @@ func hide_textbox():
 func show_textbox():
 	textbox_container.show()
 	
+func on_tween_finished():
+		change_state(State.FINISHED)
+	
 func add_text(next_text):
 	change_state(State.READING)
 	label.text = next_text
 	var duration = next_text.length() * CHAR_READ_RATE
-	var text_length = next_text.length()
 	show_textbox()
-	#tween.tween_property(label, "visible_characters", text_length, text_length * CHAR_READ_RATE)
 	tween.tween_property(label, "visible_ratio", 1, duration)
 	tween.connect("finished", on_tween_finished)
-	
-	
-func on_tween_finished():
-		change_state(State.FINISHED)
-	
 	
 func change_state(next_state):
 	current_state = next_state
@@ -66,10 +62,4 @@ func change_state(next_state):
 			print("changed to reading")
 		State.FINISHED:
 			print("changed to finished")
-			
-			
-			
-			
-			
-			
-			
+	
