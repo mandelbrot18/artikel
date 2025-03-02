@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuicgy5x4slre"]
+
+[ext_resource type="FontFile" uid="uid://cabgsw3vwr2tl" path="res://assets/fonts/ELEGANT TYPEWRITER Regular.ttf" id="1_cx0jj"]
+
+[node name="Textbox" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -161.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Panel"]
+layout_mode = 0
+offset_right = 1117.0
+offset_bottom = 118.0
+theme_override_fonts/font = ExtResource("1_cx0jj")
+theme_override_font_sizes/font_size = 30
+text = "text"
+horizontal_alignment = 1
+vertical_alignment = 1
