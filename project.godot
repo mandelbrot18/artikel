@@ -16,4 +16,4 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DialogueLibrary="*res://Globals/DialogueLibrary.gd"
+DialogueLibrary="*res://globals/DialogueLibrary.gd"
