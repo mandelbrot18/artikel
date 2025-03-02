@@ -1,0 +1,16 @@
+{
+	"dial_ger" : [
+		{"name":"Ich", "line": "Hallo. Ich suche Birnen."},
+		{"name": null, "line": "Der Verkäufer sieht mich traurig an."},
+		{"name":"Verkäufer", "line": "Wir haben keine Birnen."},
+		{"name":"Ich", "line": "Okay, schönen Tag noch."},
+		{"name":"Verkäufer", "line": "Auf Wiedersehen."}
+		],
+	"dial_eng" : [
+		{"name":"Me", "line": "Hello. I'm looking for pears."},
+		{"name": null, "line": "The salesperson looks at me sadly."},
+		{"name":"Salesperson", "line": "We don't have pears."},
+		{"name":"Me", "line": "Okay, have a nice day."},
+		{"name":"Salesperson", "line": "Goodbye."}
+		]
+}
