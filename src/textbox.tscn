@@ -35,4 +35,5 @@ theme_override_fonts/font = ExtResource("1_cx0jj")
 theme_override_font_sizes/font_size = 30
 text = "es sitzt ein vogel auf dem leim er flattert sehr doch kommt nicht heim ein schwarzer kater kommt herrzu die krallen scharf die augen gluh am baum hinauf und immer höher kommt er dem armen vogel näher. der vogel spricht weil das so ist und weil mich doch der kater frisst so will ich keine zeit verlieren will noch ein wenig quinquillieren und lustig pfeifen wie zuvor der vogel scheint mir hat humor"
 autowrap_mode = 2
-visible_ratio = -0.00250627
+visible_characters = 0
+visible_ratio = 0.0
